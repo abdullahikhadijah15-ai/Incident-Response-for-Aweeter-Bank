@@ -1,0 +1,8 @@
+{
+  "name": "Aweeter/IR",
+  "description": "Full-stack Incident Response management console for Aweeter Bank security operations with playbook automation, SLA countdowns, and regulatory reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

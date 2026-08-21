@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #0B1220;
+  --panel-bg: #131B2E;
+  --panel-alt: #1B2540;
+  --border-color: #223055;
+  --text-primary: #E8EAED;
+  --text-dimmed: #9AA5B8;
+  --amber-accent: #F2A93B;
+  --teal-accent: #2DD4BF;
+  --critical-red: #E5484D;
+  --medium-yellow: #E8C547;
+  --low-grey: #6B7A99;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Security Console Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1220;
+}
+::-webkit-scrollbar-thumb {
+  background: #223055;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7A99;
+}
+
+/* Circular SLA Countdown Donut Ring */
+.sla-donut-ring {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sla-donut-ring::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--panel-bg);
+}
+
+.sla-donut-ring-lg {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sla-donut-ring-lg::before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--panel-bg);
+}
+
+.sla-donut-ring-md {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sla-donut-ring-md::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--panel-bg);
+}
+
+/* Badge and Pill utilities */
+.badge-critical {
+  background-color: rgba(229, 72, 77, 0.15);
+  color: #E5484D;
+  border: 1px solid rgba(229, 72, 77, 0.35);
+}
+
+.badge-high {
+  background-color: rgba(242, 169, 59, 0.15);
+  color: #F2A93B;
+  border: 1px solid rgba(242, 169, 59, 0.35);
+}
+
+.badge-medium {
+  background-color: rgba(232, 197, 71, 0.15);
+  color: #E8C547;
+  border: 1px solid rgba(232, 197, 71, 0.35);
+}
+
+.badge-low {
+  background-color: rgba(107, 122, 153, 0.15);
+  color: #9AA5B8;
+  border: 1px solid rgba(107, 122, 153, 0.35);
+}
+
+.badge-open {
+  background-color: rgba(242, 169, 59, 0.12);
+  color: #F2A93B;
+  border: 1px solid rgba(242, 169, 59, 0.3);
+}
+
+.badge-contained {
+  background-color: rgba(45, 212, 191, 0.12);
+  color: #2DD4BF;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
+
+.badge-closed {
+  background-color: rgba(107, 122, 153, 0.12);
+  color: #9AA5B8;
+  border: 1px solid rgba(107, 122, 153, 0.25);
+}
